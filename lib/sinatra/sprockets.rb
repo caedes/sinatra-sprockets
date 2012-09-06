@@ -25,8 +25,9 @@ module Sinatra
 
       config.paths.each do |path|
         environment.append_path File.join(config.app.root, config.prefix, path)
-        environment.append_path File.join(config.app.root, 'lib', config.prefix, path)
-        environment.append_path File.join(config.app.root, 'vendor', config.prefix, path)
+        %w(lib vendor).each do |directory|
+          environment.append_path File.join(config.app.root, directory, config.prefix, path)
+        end
       end
 
       if config.compress
