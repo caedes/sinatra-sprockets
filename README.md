@@ -22,7 +22,7 @@ In your `config.ru`, add a mapping for Sprockets:
       run Sinatra::Sprockets.environment
     end
 
-Assets can be placed in one of three locations: `assets`, `lib/assets` or `vendor/assets` if `prefix is set to `'assets'`.
+Assets can be placed in one of three locations: `assets`, `lib/assets` or `vendor/assets` if `prefix` is set to `'assets'`.
 
 Optionally configure as needed. Configuration is similar to Rails's Asset Pipeline.
 Below is an example configuration with some options showing the default values:
