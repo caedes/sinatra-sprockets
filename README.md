@@ -6,7 +6,7 @@ Sinatra extension for Sprockets integration.
 
 Add this line to your application's Gemfile:
 
-    gem 'sinatra-sprockets-ext', require: 'sinatra/sprockets'
+    gem 'sinatra-sprockets-ext'
 
 Currently requires 1.9 (1.8 is near end-of-life anyway).
 
