@@ -55,12 +55,6 @@ module Sinatra::Sprockets
       end.join("\n")
     end
 
-    def asset_path(source, options={})
-      source = source.logical_path if source.respond_to?(:logical_path)
-      path = asset_paths.compute_public_path(source, config.prefix, options.merge(:body => true))
-      options[:body] ? "#{path}?body=1" : path
-    end
-
     private
 
     def assets_environment
@@ -74,5 +68,10 @@ module Sinatra::Sprockets
     def config
       Sinatra::Sprockets.config
     end
+
+    def asset_exist?(source)
+      !Sinatra::Sprockets.environment.find_asset(source.to_s).nil?
+    end
+    alias :asset_exists? :asset_exist?
   end
 end

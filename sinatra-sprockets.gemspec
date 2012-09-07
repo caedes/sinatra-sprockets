@@ -2,10 +2,10 @@
 require File.expand_path('../lib/sinatra/sprockets/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Andrew Marshall"]
-  gem.email         = ["andrew@johnandrewmarshall.com"]
+  gem.authors       = ["Andrew Marshall", 'Romain Laurent']
+  gem.email         = ["andrew@johnandrewmarshall.com", 'laurentromain@gmail.com']
   gem.description   = %q{Sinatra plugin for Sprockets integration}
-  gem.summary       = %q{Sinatra plugin for Sprockets integration}
+  gem.summary       = gem.description
   gem.homepage      = "http://johnandrewmarshall.com/projects/sinatra-sprockets"
 
   gem.files         = `git ls-files`.split($\)

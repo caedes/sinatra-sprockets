@@ -43,6 +43,10 @@ You'll also get helper functions that will be familiar to those who use Rails:
 - `stylesheet_link_tag :asset_name`
 - `asset_path :asset_name`
 
+And some others that's really new:
+
+- `asset_exist? :asset_name`
+
 ## Credits & License
 
 Copyright © 2012 J. Andrew Marshall. All rights reserved.
