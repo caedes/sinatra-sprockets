@@ -8,6 +8,10 @@ Add this line to your application's Gemfile:
 
     gem 'sinatra-sprockets-ext'
 
+or `gem install sinatra-sprockets-ext` and then manually require it:
+
+    require 'sinatra/sprockets'
+
 Currently requires 1.9 (1.8 is near end-of-life anyway).
 
 ## Usage
@@ -51,3 +55,5 @@ And some others that's really new:
 
 Copyright © 2012 J. Andrew Marshall. All rights reserved.
 License is available in the LICENSE file.
+
+Special thanks to [those who have contributed](https://github.com/amarshall/sinatra-sprockets/graphs/contributors)!
